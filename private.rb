@@ -20,7 +20,7 @@ class Bartender
 
   def make_drink
     @cocktail_ingredients = []
-    choose_liquour
+    choose_liquor
     choose_mixer
     choose_garnish
     "Here is your dirnk. It contains #{@cocktail_ingredients}"
@@ -29,7 +29,7 @@ class Bartender
   private
 
   def choose_liquor
-    @cocktail_ingredients << "whiskey"
+    @cocktail_ingredients << ""whiskey""
   end
 
   def choose_mixer
@@ -40,5 +40,7 @@ class Bartender
     @cocktail_ingredients << "olives"
   end
 end
+
+phil = Bartender.new("Phil")
 
 binding.pry
